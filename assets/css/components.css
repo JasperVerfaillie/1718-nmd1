@@ -1,0 +1,113 @@
+/* Navigation    */
+nav {
+    background-color: black;
+}
+.nav-main ul {
+    list-style: none;
+    margin: 0;
+    padding: 12px 0;
+    display: flex;
+    flex-direction: row;
+}
+.nav-item {
+    margin-left: 12px;
+}
+.nav-item__link {
+    background-color: var(--color-grey-4);
+    color: var(--color-white);
+    padding: 4px 8px;
+}
+.nav-item__link:hover {
+    background-color: var(--color-orange);
+}   
+    
+/* Jumbotron component (voor de durvers)
+    De jumbotron heeft op grote schermen een andere lay-out dan op kleine schermen
+    Hoe het op een groot scherm uit ziet bepalen we binnen de media-query.
+    Mobile-first dus de css-code voor mobiel staat hier. Deze voor grote schermen staat onderaan bij de mediaquery (regel 140). */
+.jumbotron {
+    margin-bottom: var(--grid-gutter);
+    }
+.jumbotron img {
+    width: 100%;
+    height: auto;
+    }
+.jumbotron_txt p {
+    color: var(--color-orange);
+    padding: 6px;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+    }
+/* cards */
+
+.card_row > div {
+    margin-bottom: var(--grid-gutter);
+    }
+    
+    .card {
+        min-height: 150px;
+        position: relative;
+        background-color: var(--color-light-grey);
+    }
+    .card_img_container img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .card_txt_container {
+        min-height: 350px;
+        padding: 0 15px;
+      }
+    
+    .card_title_container p a {
+        display: inline-block;
+        background-color: var(--color-black);
+        color: var(--color-white);
+        padding: 2px;
+    }
+
+/* footer */
+footer {
+    background-color: black;
+    padding: 12px;
+}
+
+@media (min-width: 480px) {
+    
+}
+@media (min-width: 768px) {
+    /*
+    Jumbotron component
+    De jumbotron heeft op grote schermen een andere lay-out dan op kleine schermen
+    Hoe het op een groot scherm uit ziet bepalen we binnen de media-query.
+    Mobile-first dus de css-code voor mobiel staat bij de algemene css hierboven.
+    */
+    .jumbotron {
+        position: relative;
+        height: 450px;
+        margin-bottom: var(--grid-gutter);
+    }
+    .jumbotron img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .jumbotron_txt {
+        z-index:10;
+        position: absolute;
+        bottom: 12px;
+        left: 50px;
+        
+    }
+    .jumbotron_txt p {
+        color: var(--color-orange);
+        width: 50%;
+        padding: 6px;
+        color: white;
+        background-color: rgba(0,0,0,0.8);
+    }
+}
+@media (min-width: 960px) {
+    
+}
