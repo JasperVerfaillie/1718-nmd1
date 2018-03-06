@@ -20,11 +20,6 @@ nav {
 .nav-item__link:hover {
     background-color: var(--color-orange);
 }   
-    
-/* Jumbotron component (voor de durvers)
-    De jumbotron heeft op grote schermen een andere lay-out dan op kleine schermen
-    Hoe het op een groot scherm uit ziet bepalen we binnen de media-query.
-    Mobile-first dus de css-code voor mobiel staat hier. Deze voor grote schermen staat onderaan bij de mediaquery (regel 140). */
 .jumbotron {
     margin-bottom: var(--grid-gutter);
     }
@@ -66,10 +61,54 @@ nav {
         color: var(--color-white);
         padding: 2px;
     }
+    .info_button {
+        display: block;
+        position: absolute;
+        bottom: 6px;
+        right: 12px;
+        padding: 3px;
+        border-radius:3px;
+    }
+    .info_button:hover {
+        background-color: var(--color-white);
+        color: var(--color-grey-2);
+    }    
+
+.right_column_container aside {
+        background-color: var(--color-grey-1);
+        color: var(--color-grey-3);
+    }
+.aside_img img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+.aside_txt {
+        padding: 0 12px;
+    }
+.aside_txt ul {
+        list-style: none;
+        padding: 0;
+    }
+.aside_txt ul li {
+        padding-left: 50px;
+        text-indent: -50px;
+    }
+.aside_txt ul li span{
+        color: var(--color-orange);
+        margin-right: 12px;
+    }
+.aside_txt iframe {
+        width: 100%;
+    }
+
+
 
 /* footer */
+
 footer {
-    background-color: black;
+    background-color: var(--color-black);
+    color: var(--color-dark-grey);
     padding: 12px;
 }
 

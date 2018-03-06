@@ -20,7 +20,9 @@
     /* fonts --------- */
     --font-family-body: 'Zilla Slab', serif;
     --font-family-headings: 'Raleway', sans-serif;
-    --font-family-jumbo: 'Yellowtail', cursive;
+    --font-family-jumbo: 'Roboto',;
+    
+    /*'Yellowtail', cursive;*/
 
     /* layout --------- */
     --grid-gutter: 24px;
